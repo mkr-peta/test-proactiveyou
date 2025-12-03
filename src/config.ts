@@ -1,7 +1,7 @@
 // Configuration for the app
 export const CONFIG = {
   // Cloud API endpoint - UPDATE THIS with your backend URL
-  API_ENDPOINT: 'https://your-backend-url.com/api/steps',
+  API_ENDPOINT: 'https://test-proactiveyou.onrender.com/api/steps',
 
   // Upload interval in milliseconds (default: 5 minutes)
   // Note: iOS HealthKit background delivery only triggers ~hourly
