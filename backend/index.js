@@ -47,7 +47,7 @@ function saveData() {
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS === '*' ? '*' : process.env.ALLOWED_ORIGINS.split(',')
+  origin: process.env.ALLOWED_ORIGINS === '*' || !process.env.ALLOWED_ORIGINS ? '*' : process.env.ALLOWED_ORIGINS.split(',')
 }));
 app.use(express.json()); // Parse JSON bodies
 app.use(morgan('combined')); // Logging
